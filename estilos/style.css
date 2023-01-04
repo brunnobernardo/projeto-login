@@ -9,7 +9,6 @@
      Areia clara:#F5D7B0
      Areia:#F5DBBA
 
-
 */
 
 
@@ -43,6 +42,9 @@ section#login {
     height: 550px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
