@@ -32,12 +32,11 @@ main {
 }
 
 section#login {
-    
+
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     
     background-color: white;
@@ -48,7 +47,7 @@ section#login {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
-    
+    transform: translate(-50%, -50%);
 
 }
 
@@ -74,19 +73,42 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    margin: 10px 10px;
 }
 
 form > div.campo {
     background-color: #F5DBBA;
+    border: 2px solid #F5DBBA;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #8DB1BC;
+    font-size: 1em;
+    width: calc(100% - 45px); /* Calc para configurar o espaço que vai ser utilizado */
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within { /* "focus-within" quando clica em uma caixa acontece algo*/
+    background-color: white;
 }
 
 form > input[type=submit]{
