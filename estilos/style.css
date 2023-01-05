@@ -98,6 +98,7 @@ div.campo > i {
 
 div.campo > input {
     background-color: #8DB1BC;
+    color: black;
     font-size: 1em;
     width: calc(100% - 45px); /* Calc para configurar o espaço que vai ser utilizado */
     height: 100%;
